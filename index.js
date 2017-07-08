@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/test',function(req,res){
-    res.json({"name":"dimitri","password":"dimitri","message":"test 1 API Endpoint"})
+    res.sendFile('index.html', { root: './public' });
 })
 
 
